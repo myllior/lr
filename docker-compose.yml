@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+  app:
+    container_name: lr_app
+    image: node:14.15.0-alpine3.12
+    ports:
+      - 4200:4200
+    volumes:
+      - ./:/var/www/html
+    working_dir: /var/www/html
+#    working_dir: /var/www/html/my-app
+#    command: ./node_modules/.bin/ng serve --open
