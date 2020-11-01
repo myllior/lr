@@ -10,7 +10,7 @@ import {Post, PostsService} from "../posts.service";
 export class PostComponent implements OnInit {
   post: Post
 
-  constructor(private router: ActivatedRoute, private postS: PostsService) {
+  constructor(private router: ActivatedRoute, public postS: PostsService) {
   }
 
   ngOnInit(): void {
